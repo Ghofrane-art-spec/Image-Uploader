@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Uploader</title>
+</head>
+<body>
+    <div class="box">
+        <h1>Upload your image</h1>
+        <p>File should be Jpeg, Png,...</p>
+        <label id="dropArea">
+          <input type="file" (change)="onFileSelected($event)" name="image" accept="image/*" hidden>
+          <div id="img-view" >
+            <img src="../../assets/9145881.png">
+            <p>Drag and drop or click here </p>
+          </div>
+          <p>Or</p>
+          <div class="custom-file-input-container">
+            <!-- Custom button -->
+            <label for="file" class="custom-file-input-button">Choose File</label>
+            <!-- Actual file input (hidden) -->
+            <input type="file" id="file" class="custom-file-input" (change)="onFileSelected($event)" name="image" accept="image/*" />
+          </div>
+        </label>
+    </div>
+    <div class="loader"></div>
+</body>
+</html>

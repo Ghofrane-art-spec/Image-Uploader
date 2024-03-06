@@ -1,0 +1,118 @@
+.box{
+    border : 2px solid whitesmoke;
+	border-radius: 20px ; 
+    padding: 200px;
+    background: white;
+    box-shadow: 0px 4px 12px #888888;
+    padding: 30px ; 	   
+	margin-right: 400px ;		
+	margin-left: 400px ;
+    margin-top: 100px;
+}
+
+h1{
+color: var(--Gray-2, #4F4F4F);
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.63px;
+text-align: center;
+}
+
+p{ 
+    text-align: center; 
+    color: #828282; 
+    font-family: Poppins; 
+    font-weight: 500; 
+    word-wrap: break-word;
+    margin-top: 30px;
+}
+
+#dropArea{
+  width: 500px;
+  height: 300px;
+  padding: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#img-view{
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    border: 2px dashed #bbb5ff;
+    background: #f7f8ff;
+    margin-left: 45px;
+}
+
+#img-view img{
+    width: 100px;
+    margin-top: 25px;
+}
+
+
+
+.custom-file-input-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Style for the custom button */
+  .custom-file-input-button {
+    background-color: #1590e2;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* Style for the actual file input (hidden) */
+  .custom-file-input {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .loader {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #f7f9fb;
+    transition: opacity 0.75s, visibilty 0.75s;
+  }
+  
+  .loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .loader::after{
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #7449f5 ;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+  }
+  
+  @keyframes loading {
+    from{
+      transform: rotate(0turn);
+    }
+    to{
+      transform: rotate(1turn);
+    }
+  }
+  
+
+  
+
+

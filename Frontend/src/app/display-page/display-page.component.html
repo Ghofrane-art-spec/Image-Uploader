@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Uploader</title>
+</head>
+<body>
+    <div class="box">
+        <img src="../../assets/Capture.PNG" width="15%" class="logo">
+        <h1>Uploaded successfully</h1>
+        <img [src]="imageURL" class="image"><br><br>
+        <div class="row g-3">
+            <div class="col">
+              <input  type="text" class="form-control" value="{{imageURL}}" >
+              <div id="liveAlertPlaceholder"></div>
+            </div>
+            <div class="col" >
+                <button type="button" class="btn btn-primary" id="liveAlertBtn" (click)="copy()">Copy Link</button>
+            </div>
+          </div>
+    </div>
+</body> 
+</html>
