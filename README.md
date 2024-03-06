@@ -6,6 +6,8 @@ the first one is where the user selects an image and upload it and the second on
 
 Frameworks:
 
-Frontend:Angular
+Frontend: Angular
 
-backend:Spring Boot
+backend: Spring Boot
+
+Database management system: MySQL
